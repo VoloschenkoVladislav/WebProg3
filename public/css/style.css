@@ -1,0 +1,118 @@
+:root {
+    --black: black;
+    --white: white;
+    --grey: rgb(230, 230, 230);
+    --light-grey: rgb(245, 245, 245);
+    --dark-grey: rgb(100, 100, 100);
+    --red: rgb(190, 0, 0);
+    --green: rgb(0, 107, 54);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    box-sizing: border-box;
+    background-color: var(--grey, grey);
+}
+
+header {
+    background-color: var(--black, black);
+    color: var(--white, white);
+    padding: 3em 5em 3em;
+    display: flex;
+}
+
+header h1 {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.header-left-side {
+    width: 30em;
+}
+
+.header-right-side {
+    width: calc(100% - 30em);
+    padding-left: 10em;;
+}
+
+.logo {
+    width: 100%;
+}
+
+ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+.about-us-dark, .about-us-light {
+    padding: 1em 3em;
+}
+
+.about-us-light {
+    background-color: var(--light-grey, white);
+}
+
+.about-us-dark {
+    background-color: var(--grey, grey);
+}
+
+.photo-of-student {
+    height: 5em;
+    float: left;
+    margin-right: 1em;
+}
+
+.interactive {
+    background-color: white;
+    border-top: 3px solid black;
+    display: flex;
+}
+
+.interactive .comments {
+    width: 70%;
+}
+
+.interactive .no-comment {
+    margin: 3em;
+}
+
+.interactive .comments li {
+    padding: 1em;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.comments__name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.interactive form {
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+.interactive form * {
+    display: block;
+    margin: 1em;
+}
+
+.interactive form input[name="value"] {
+    width: 80%;
+}
+
+footer {
+    background-color: var(--black, black);
+    padding: 1em 3em;
+}
+
+footer a {
+    color: var(--dark-grey, white);
+    margin-right: 2em;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--white, white);
+}
